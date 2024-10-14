@@ -1,0 +1,96 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #1d1b1b;
+    color: #ffffff;
+    padding-top: 80px; /* ترك مساحة فوق المحتوى لتجنب تداخل الهيدر مع النصوص */
+}
+
+.a1 {
+    text-align: right;
+    font-size: 2em; /* تصغير حجم الخط على الشاشات الصغيرة */
+    font-weight: bold;
+    margin: 20px 10px; /* تقليل الهوامش على الشاشات الصغيرة */
+    padding: 10px;
+    color: #ffffff;
+    transition: background-color 0.5s ease;
+}
+
+#a2 {
+    position: absolute; /* تغيير موضع الصورة إلى absolute */
+    top: 20px;
+    left: 20px;
+    width: 190px; /* عرض أصغر للصورة على الشاشات الصغيرة */
+    height: auto;
+    object-fit: cover;
+    transition: filter 0.5s ease;
+}
+
+.a3 {
+    padding: 20px;
+    color: #ffffff;
+    text-align: right;
+}
+
+.a4 {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px; /* تقليل الحشو على الشاشات الصغيرة */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.a4:hover {
+    background-color: #0056b3;
+}
+
+/* تكبير الأيقونات */
+.fas.fa-code {
+    font-size: 75px; /* حجم الأيقونة */
+}
+
+
+@media (max-width: 768px) {
+    .a1 {
+        font-size: 1.5em; /* تصغير حجم الخط على الشاشات الصغيرة */
+        margin: 10px; /* تقليل الهوامش */
+    }
+
+    .a2 {
+        width: 120px; /* عرض أصغر للصورة على الشاشات الصغيرة */
+    }
+
+    .a4 {
+        padding: 8px 15px; /* تقليل الحشو على الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    .a1 {
+        font-size: 1.2em; /* تصغير حجم الخط أكثر على الشاشات الصغيرة جداً */
+        margin: 5px; /* تقليل الهوامش بشكل أكبر */
+    }
+
+    .a2 {
+        width: 100px; /* عرض أصغر للصورة على الشاشات الصغيرة جداً */
+    }
+
+    .a4 {
+        padding: 6px 10px; /* تقليل الحشو بشكل أكبر على الشاشات الصغيرة جداً */
+        font-size: 0.9em; /* تصغير حجم الخط في الزر */
+    }
+}
